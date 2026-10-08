@@ -45,6 +45,86 @@ a{text-decoration:none;color:inherit}.top{height:30px;background:#06172f;color:#
 </nav>
 </header>
 
+<!-- ADMIN PLUS BUTTON -->
+<button id="adminPlusBtn" class="admin-plus-btn" title="Admin">
+  +
+</button>
+
+<!-- ADMIN LOGIN / UPLOAD MODAL -->
+<div id="adminModal" class="admin-modal" hidden>
+
+  <div class="admin-box">
+
+    <button id="closeAdmin" class="close-admin">×</button>
+
+    <div id="adminLogin">
+
+      <h2>Admin Login</h2>
+
+      <input
+        id="adminEmail"
+        type="email"
+        placeholder="Admin Email"
+      >
+
+      <input
+        id="adminPassword"
+        type="password"
+        placeholder="Password"
+      >
+
+      <button id="adminLoginBtn">
+        LOGIN
+      </button>
+
+      <p id="adminLoginMsg"></p>
+
+    </div>
+
+    <div id="newsUpload" hidden>
+
+      <h2>Publish News</h2>
+
+      <input
+        id="newsTitle"
+        type="text"
+        placeholder="News Title"
+      >
+
+      <input
+        id="newsCategory"
+        type="text"
+        placeholder="Category"
+        value="Updates"
+      >
+
+      <textarea
+        id="newsContent"
+        placeholder="News Content"
+        rows="8"
+      ></textarea>
+
+      <input
+        id="newsImage"
+        type="file"
+        accept="image/*"
+      >
+
+      <button id="publishNewsBtn">
+        PUBLISH NEWS
+      </button>
+
+      <button id="adminLogoutBtn">
+        LOGOUT
+      </button>
+
+      <p id="publishMsg"></p>
+
+    </div>
+
+  </div>
+
+</div>
 <div class="ticker"><strong>BREAKING</strong><span>AI-powered digital marketing is transforming the way businesses create, advertise and grow • DDS Expo Latest Updates</span></div>
 
 <main class="container" id="home">
