@@ -44,88 +44,52 @@ a{text-decoration:none;color:inherit}.top{height:30px;background:#06172f;color:#
 <a href="#creatives">AI Creatives</a><a href="#videos">AI Videos</a><a href="#websites">AI Websites</a><a href="#branding">AI Branding</a><a href="#leads">AI Leads</a><a href="#automation">AI Automation</a>
 </nav>
 </header>
+<!-- PLUS BUTTON -->
+<button id="adminPlusBtn" class="admin-plus-btn">+</button>
 
-<!-- ADMIN PLUS BUTTON -->
-<button id="adminPlusBtn" class="admin-plus-btn" title="Admin">
-  +
-</button>
+<!-- UPLOAD NEWS -->
+<div id="uploadModal" class="upload-modal" hidden>
 
-<!-- ADMIN LOGIN / UPLOAD MODAL -->
-<div id="adminModal" class="admin-modal" hidden>
+  <div class="upload-box">
 
-  <div class="admin-box">
+    <button id="closeUpload" class="close-upload">×</button>
 
-    <button id="closeAdmin" class="close-admin">×</button>
+    <h2>Upload News</h2>
 
-    <div id="adminLogin">
+    <input
+      id="newsTitle"
+      type="text"
+      placeholder="News Title"
+    >
 
-      <h2>Admin Login</h2>
+    <input
+      id="newsCategory"
+      type="text"
+      placeholder="Category"
+      value="Updates"
+    >
 
-      <input
-        id="adminEmail"
-        type="email"
-        placeholder="Admin Email"
-      >
+    <textarea
+      id="newsContent"
+      placeholder="News Content"
+      rows="7"
+    ></textarea>
 
-      <input
-        id="adminPassword"
-        type="password"
-        placeholder="Password"
-      >
+    <input
+      id="newsImage"
+      type="file"
+      accept="image/*"
+    >
 
-      <button id="adminLoginBtn">
-        LOGIN
-      </button>
+    <button id="publishNewsBtn">
+      PUBLISH
+    </button>
 
-      <p id="adminLoginMsg"></p>
-
-    </div>
-
-    <div id="newsUpload" hidden>
-
-      <h2>Publish News</h2>
-
-      <input
-        id="newsTitle"
-        type="text"
-        placeholder="News Title"
-      >
-
-      <input
-        id="newsCategory"
-        type="text"
-        placeholder="Category"
-        value="Updates"
-      >
-
-      <textarea
-        id="newsContent"
-        placeholder="News Content"
-        rows="8"
-      ></textarea>
-
-      <input
-        id="newsImage"
-        type="file"
-        accept="image/*"
-      >
-
-      <button id="publishNewsBtn">
-        PUBLISH NEWS
-      </button>
-
-      <button id="adminLogoutBtn">
-        LOGOUT
-      </button>
-
-      <p id="publishMsg"></p>
-
-    </div>
+    <p id="publishMsg"></p>
 
   </div>
 
 </div>
-<div class="ticker"><strong>BREAKING</strong><span>AI-powered digital marketing is transforming the way businesses create, advertise and grow • DDS Expo Latest Updates</span></div>
 
 <main class="container" id="home">
 <div class="crumb">Home / Digital Marketing / Latest Update</div>
